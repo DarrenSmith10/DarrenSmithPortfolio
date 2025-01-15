@@ -1,4 +1,4 @@
-.pad{
+.Navi-pad{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -39,7 +39,7 @@ img{
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Lucida Console", "Courier New", monospace;
     background: rgba(213, 212, 242, 0.66);
 }
 
@@ -55,7 +55,7 @@ footer {
 
 /*------ CSS for Form -- */
 
-body {font-family: Arial, Helvetica, sans-serif;}
+.bodyForm {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
 input[type=text], select, textarea {
@@ -70,7 +70,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color:  #45a049;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -79,7 +79,8 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color:rgba(68, 180, 92, 0.66);
+  
 }
 
 .container {
