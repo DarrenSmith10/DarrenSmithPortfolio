@@ -95,7 +95,7 @@ input[type=submit]:hover {
 a[href^="tel:"]:before {
     content: "\260e";
     margin-right: 10px;
-  }
+}
 
 /*Quote Test Settings 
 put in html page
@@ -109,10 +109,10 @@ put in html page
     padding:2.5em 0.5em;
     
     font-style:italic;
-    }
+}
     
     
-    .pullquote:before, .pullquote:after {
+.pullquote:before, .pullquote:after {
     display:block;
     position:relative;
     font-size:100px;
@@ -121,43 +121,77 @@ put in html page
     text-align:left;
     font-style:normal;
     opacity:0.25;
-    }
+}
         
-    .pullquote:before {
+.pullquote:before {
     content:"\201C";
     top:5px;
     left:350px;
-    }
+}
         
-    .pullquote:after {
+.pullquote:after {
     content:"\201D";
     bottom:-40px;
     right:-5px;
     text-align:right;
-    }
+}
    
-    /*algin my paragraph in about */
-    .aboutPara {
-        display: inline-block;
-        font-size:16px;
-        text-align:left;
-        font-style:normal;
-        }
+ /*algin my paragraph in about */
+.aboutPara {
+    display: inline-block;
+    font-size:16px;
+    text-align:left;
+    font-style:normal;
+}
 
-    .Aboutcontainer {
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 10px;
-        margin-top: 5x;
-        margin-bottom: 5x;
+.Aboutcontainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-top: 5x;
+    margin-bottom: 5x;
             
-        }
-    .aboutTextPad1{
-        padding-right: 400px;
+}
+
+.aboutTextPad1{
+    padding-right: 400px;
+}
+    
+.aboutTextPad2{
+    padding-left: 400px;
+}
+    
+/* some animations */
+.imgProfile:hover {
+    height: 300px;
+    width: 250px;
+    animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate;
+        
+}
+      
+     
+      
+@keyframes nudge {
+    0%, 100% {
+    transform: translate(0, 0);
     }
-    .aboutTextPad2{
-        padding-left: 400px;
+        
+    50%
+     { 
+        transform: translate(50px, 0);
+    
     }
+        
+    80%
+     {
+        transform: translate(-50px, 0);
+    }
+}
+    
+
+
 /*
 div{
     width: 250px;
